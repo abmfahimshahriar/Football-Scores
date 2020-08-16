@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { MatchProvider } from './Context/Context'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <MatchProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </MatchProvider>,
   document.getElementById('root')
 );
 
